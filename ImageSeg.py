@@ -18,6 +18,7 @@ def upload_image():
             print(f"Error reading image: {e}")
     if image_data is None or image_data.shape[0] != 6:
         print("Error: No image data loaded or incorrect number of bands.")
+        
         return
 
     try:
